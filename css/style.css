@@ -10,6 +10,7 @@ body{
     height: 100%; 
     height: -webkit-fill-available;
     flex: 1 0 auto;
+    width: 100%;
 }
 
 a,a:active,a:hover{
