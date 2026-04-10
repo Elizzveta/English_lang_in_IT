@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>English in IT</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        </head>
+    <body>
+     <!-- Menu -->
+     <header>
+        <nav id="menu">
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="index.html#history">History</a></li>
+          <li><a href="dictionary.html">Dictionary</a></li>
+          <li><a href="specialties.html">Specialties</a></li>
+          <li><a href="index.html#help">Help</a></li>
+        </ul>
+      </nav></header>
+    <!--End of menu-->
+
+    <!--Main page-->
+
+    <div class="main"><table id="tabl">
+        <tr>
+            <td id="f"><img id="photo1" src="img/main1.jpg" width="305px" height="288px">
+                <img id="photo2" src="img/main2.jpg" width="336px" height="418px"></td>
+            <td id="second"><img id="photo3" src="img/main3.jpg" width="370px" height="527px">
+                <img id="photo4" src="img/main4.jpg" width="404px" height="248px"></td>
+        </tr>
+        <tr>
+            <td id="down"><h2>English in the life of <br> IT specialists</h2></td>
+
+        </tr></table></div>
+        
+    <!--End of main page-->
+
+    <!--History--> 
+    <div id="history">
+        <h2>History</h2>
+        <p>The history of the English language is a reflection of the culture of the people who speak it, and of each individual person. This includes 1.53 billion people around the world. Behind these impressive numbers lies a centuries-old history and a multitude of changes.</p>
+        
+        <div class="container" id="imageContainer">
+            <img src="img/History.png" id="largeImage" alt="Большое фото" />
+          </div>
+        
+        <input type="range" id="slider" min="0" max="100" value="0" />
+    
+    </div>
+
+    <!--End of history-->
+
+    <!--Help-->
+    <section class="help" id="help">
+            <h2>Help</h2>
+            <p>Which is more convenient for you to use for training?</p>
+            <div id="support"><table id="tabl">
+                <tr>
+                        <!--Blogs-->
+                    <td>
+                        <div class="photo" id="blog" onclick="showModal(0)"><img src="img/blog.png">
+                        <p>Sites</p>
+                        <p>Blogs</p></div>
+                    </td>
+                        <!--Books-->
+                    <td>
+                        <div class="photo" id="book" onclick="showModal(1)"><img src="img/books.png">
+                        <p>Books</p>
+                        <p>Textbooks</p>
+                        <p>Dictionaries</p></div>
+                    </td>
+                </tr>
+                <tr>
+                        <!--Films-->
+                    <td>
+                        <div class="photo" id="film" onclick="showModal(2)"><img src="img/movies.png">
+                        <p>Movies</p>
+                        <p>Serials</p>
+                        <p>Video clips</p></div>
+                    </td>
+                        <!--Music-->
+                    <td>
+                        <div class="photo" id="music" onclick="showModal(3)"><img src="img/music.png">
+                        <p>Podcasts</p>
+                        <p>Forums</p></div>
+                    </td>
+                </tr>
+            </table>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                  <button class="modal-close" onclick="closeModal()">&times;</button>
+                  <div id="modalText">
+                  </div>
+                </div>
+              </div>
+    </section>
+    <!--End of help-->
+    <footer class="footer">
+        <div id="footer">
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="index.html#history">History</a></li>
+                <li><a href="dictionary.html">Dictionary</a></li>
+                <li><a href="specialties.html">Specialties</a></li>
+                <li><a href="index.html#help">Help</a></li>
+            </ul>
+        </div>
+        <p>© 2026 English in IT.</p>
+    </footer>
+    <!--End-->
+    <script src="js/script.js"></script>
+    </body>
+</html>
